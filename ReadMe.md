@@ -17,7 +17,7 @@
 
 ##How to use the run_analysis.R script:
 - the script must be in the same folder as Samsung data 
-- run run_analysis.R
+- source("run_analysis.R") and execute run()
 - get the output (tidyData.txt). This data can be read into R with the command:
  
 >read.table("tidyData.txt", header=TRUE)
@@ -31,6 +31,6 @@
 
 > - Each part of the measurement label begins with an uppercase and are separated by a '.' (_dot_).
 > - measurement label starts with _Time._ for features that correspond to time domain signals (features that begins with a t)
-> - measurement label starts with _Freq._ for features that correspond to frequency domain signals (features that begins with a t)
+> - measurement label starts with _Freq._ for features that correspond to frequency domain signals (features that begins with a f)
 
 - The values average of each variable for each activity and each subject
