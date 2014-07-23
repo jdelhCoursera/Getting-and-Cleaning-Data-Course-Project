@@ -19,13 +19,18 @@
 - the script must be in the same folder as Samsung data 
 - run run_analysis.R
 - get the output (tidyData.txt). This data can be read into R with the command:
+ 
 >read.table("tidyData.txt", header=TRUE)
 
 ##How the tidy data set is built:
 - The columns for mean and standard deviation are extracted and merged from training and test source datasets. 
+
 >In the source datasets, the mean and standard deviation measurements correspond to features that ends with __--mean()__ and __--std()__.
+
 - For better readability, the columns are renamed using the following convention: 
->Each part of the measurement label begins with an uppercase and are separated by a '.' (_dot_).
->measurement label starts with _Time._ for features that correspond to time domain signals (features that begins with a t)
->measurement label starts with _Freq._ for features that correspond to frequency domain signals (features that begins with a t)
+
+> - Each part of the measurement label begins with an uppercase and are separated by a '.' (_dot_).
+> - measurement label starts with _Time._ for features that correspond to time domain signals (features that begins with a t)
+> - measurement label starts with _Freq._ for features that correspond to frequency domain signals (features that begins with a t)
+
 - The values average of each variable for each activity and each subject
